@@ -65,11 +65,11 @@
     <Compile Include="Presentation\Form3.Designer.cs">
       <DependentUpon>Form3.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Form4.cs">
+    <Compile Include="Presentation\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Presentation\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Form5.cs">
       <SubType>Form</SubType>
@@ -84,6 +84,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Form3.resx">
       <DependentUpon>Form3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
