@@ -65,11 +65,11 @@
     <Compile Include="Presentation\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Form4.cs">
+    <Compile Include="Presentation\Register.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Form4.Designer.cs">
-      <DependentUpon>Form4.cs</DependentUpon>
+    <Compile Include="Presentation\Register.Designer.cs">
+      <DependentUpon>Register.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Form5.cs">
       <SubType>Form</SubType>
@@ -97,6 +97,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\Admin.resx">
+      <DependentUpon>Admin.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
     </EmbeddedResource>
@@ -111,6 +114,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UserControl4.resx">
       <DependentUpon>UserControl4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Register.resx">
+      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -159,6 +165,21 @@
   <ItemGroup>
     <Folder Include="DataAccess\" />
     <Folder Include="Entity\" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\1200px-User_font_awesome.svg.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\kisspng-fast-food-junk-food-signage-symbol-food-5ace3b15818db5.1937910815234649815307.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\ic_Food_Feature_21.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\575ff7fd547876bedeaf4e3d6cbfb342.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\21-216187_clip-art-restaurant-free-elements-objects-restaurant-logo.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -63,6 +63,16 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1200px_User_font_awesome_svg {
+            get {
+                object obj = ResourceManager.GetObject("1200px-User_font_awesome.svg", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _171_1717870_stockvader_predicted_cron_for_may_user_profile_icon_png {
             get {
                 object obj = ResourceManager.GetObject("171-1717870_stockvader-predicted-cron-for-may-user-profile-icon-png", resourceCulture);
@@ -73,9 +83,39 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _21_216187_clip_art_restaurant_free_elements_objects_restaurant_logo {
+            get {
+                object obj = ResourceManager.GetObject("21-216187_clip-art-restaurant-free-elements-objects-restaurant-logo", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _575ff7fd547876bedeaf4e3d6cbfb342 {
+            get {
+                object obj = ResourceManager.GetObject("575ff7fd547876bedeaf4e3d6cbfb342", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap ic_Food_Feature_2 {
             get {
                 object obj = ResourceManager.GetObject("ic_Food_Feature_2", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap ic_Food_Feature_21 {
+            get {
+                object obj = ResourceManager.GetObject("ic_Food_Feature_21", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -96,6 +136,17 @@ namespace Restaurant.Properties {
         internal static System.Drawing.Bitmap img_316131 {
             get {
                 object obj = ResourceManager.GetObject("img_316131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap kisspng_fast_food_junk_food_signage_symbol_food_5ace3b15818db5_1937910815234649815307 {
+            get {
+                object obj = ResourceManager.GetObject("kisspng-fast-food-junk-food-signage-symbol-food-5ace3b15818db5.193791081523464981" +
+                        "5307", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
