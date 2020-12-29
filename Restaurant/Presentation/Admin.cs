@@ -10,11 +10,29 @@ using System.Windows.Forms;
 
 namespace Restaurant
 {
-    public partial class Form2 : Form
+    public partial class Admin : Form
     {
-        public Form2()
+        public Admin()
         {
             InitializeComponent();
+        }
+
+        private void Form2_Load(object sender, EventArgs e)
+        {
+            int w = Screen.PrimaryScreen.Bounds.Width;
+            int h = Screen.PrimaryScreen.Bounds.Height;
+            this.Location = new Point(0, 0);
+            this.Size = new Size(w, h);
+        }
+
+        private void Form2_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

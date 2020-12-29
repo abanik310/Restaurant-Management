@@ -19,12 +19,20 @@ namespace Restaurant
 
         private void Login_Load(object sender, EventArgs e)
         {
-
+            //int w = Screen.PrimaryScreen.Bounds.Width;
+            //int h = Screen.PrimaryScreen.Bounds.Height;
+            //this.Location = new Point(0, 0);
+            //this.Size = new Size(w, h);
         }
 
         private void panel1_Paint(object sender, PaintEventArgs e)
         {
 
+        }
+
+        private void Login_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            Application.Exit();
         }
     }
 }
