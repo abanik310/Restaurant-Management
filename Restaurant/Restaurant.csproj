@@ -141,6 +141,9 @@
     <EmbeddedResource Include="Presentation\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Form5.resx">
+      <DependentUpon>Form5.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PurchasesAll.resx">
       <DependentUpon>PurchasesAll.cs</DependentUpon>
     </EmbeddedResource>
