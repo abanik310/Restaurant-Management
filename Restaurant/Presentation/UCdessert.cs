@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class UserControl4 : UserControl
+    public partial class DesertUscntrl : UserControl
     {
-        public UserControl4()
+        public DesertUscntrl()
         {
             InitializeComponent();
         }
