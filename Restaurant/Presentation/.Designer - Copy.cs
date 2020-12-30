@@ -37,10 +37,11 @@
             this.btnManagerDashBoard = new System.Windows.Forms.Button();
             this.pnlAdminUI = new System.Windows.Forms.Panel();
             this.pnlManagerMain = new System.Windows.Forms.Panel();
+            this.pnlCashierMain = new System.Windows.Forms.Panel();
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAdminName = new System.Windows.Forms.Label();
-            this.panel3 = new System.Windows.Forms.Panel();
+            this.btnCashierProfile = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.AdminLeftPanel.SuspendLayout();
             this.pnlAdminUI.SuspendLayout();
@@ -67,6 +68,7 @@
             // AdminLeftPanel
             // 
             this.AdminLeftPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.AdminLeftPanel.Controls.Add(this.btnCashierProfile);
             this.AdminLeftPanel.Controls.Add(this.btnManagerPurchases);
             this.AdminLeftPanel.Controls.Add(this.btnManFood);
             this.AdminLeftPanel.Controls.Add(this.btnManagerLogout);
@@ -106,7 +108,7 @@
             this.btnManagerLogout.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnManagerLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnManagerLogout.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerLogout.Location = new System.Drawing.Point(3, 228);
+            this.btnManagerLogout.Location = new System.Drawing.Point(3, 270);
             this.btnManagerLogout.Name = "btnManagerLogout";
             this.btnManagerLogout.Size = new System.Drawing.Size(120, 36);
             this.btnManagerLogout.TabIndex = 3;
@@ -117,7 +119,7 @@
             // btnManagerSettings
             // 
             this.btnManagerSettings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerSettings.Location = new System.Drawing.Point(3, 186);
+            this.btnManagerSettings.Location = new System.Drawing.Point(3, 228);
             this.btnManagerSettings.Name = "btnManagerSettings";
             this.btnManagerSettings.Size = new System.Drawing.Size(120, 36);
             this.btnManagerSettings.TabIndex = 2;
@@ -134,6 +136,7 @@
             this.btnManagerDashBoard.TabIndex = 0;
             this.btnManagerDashBoard.Text = "Dash Board";
             this.btnManagerDashBoard.UseVisualStyleBackColor = true;
+            this.btnManagerDashBoard.Click += new System.EventHandler(this.btnManagerDashBoard_Click);
             // 
             // pnlAdminUI
             // 
@@ -148,12 +151,20 @@
             // 
             // pnlManagerMain
             // 
-            this.pnlManagerMain.Controls.Add(this.panel3);
+            this.pnlManagerMain.Controls.Add(this.pnlCashierMain);
             this.pnlManagerMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlManagerMain.Location = new System.Drawing.Point(0, 58);
             this.pnlManagerMain.Name = "pnlManagerMain";
             this.pnlManagerMain.Size = new System.Drawing.Size(1212, 665);
             this.pnlManagerMain.TabIndex = 1;
+            // 
+            // pnlCashierMain
+            // 
+            this.pnlCashierMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlCashierMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlCashierMain.Name = "pnlCashierMain";
+            this.pnlCashierMain.Size = new System.Drawing.Size(1212, 665);
+            this.pnlCashierMain.TabIndex = 2;
             // 
             // panel1
             // 
@@ -171,7 +182,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(964, 17);
+            this.label1.Location = new System.Drawing.Point(870, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 28);
             this.label1.TabIndex = 4;
@@ -182,19 +193,21 @@
             this.lblAdminName.AutoSize = true;
             this.lblAdminName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAdminName.Location = new System.Drawing.Point(1082, 17);
+            this.lblAdminName.Location = new System.Drawing.Point(988, 16);
             this.lblAdminName.Name = "lblAdminName";
             this.lblAdminName.Size = new System.Drawing.Size(75, 28);
             this.lblAdminName.TabIndex = 5;
             this.lblAdminName.Text = "Name";
             // 
-            // panel3
+            // btnCashierProfile
             // 
-            this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.panel3.Location = new System.Drawing.Point(0, 0);
-            this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(1212, 665);
-            this.panel3.TabIndex = 2;
+            this.btnCashierProfile.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCashierProfile.Location = new System.Drawing.Point(3, 186);
+            this.btnCashierProfile.Name = "btnCashierProfile";
+            this.btnCashierProfile.Size = new System.Drawing.Size(120, 36);
+            this.btnCashierProfile.TabIndex = 8;
+            this.btnCashierProfile.Text = "Profile";
+            this.btnCashierProfile.UseVisualStyleBackColor = true;
             // 
             // Manager
             // 
@@ -205,7 +218,7 @@
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Manager";
-            this.Text = "Manager";
+            this.Text = "Cashier";
             this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Form2_FormClosing);
             this.Load += new System.EventHandler(this.Form2_Load);
             this.tableLayoutPanel1.ResumeLayout(false);
@@ -232,6 +245,7 @@
         private System.Windows.Forms.Button btnManFood;
         private System.Windows.Forms.Panel pnlManagerMain;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel pnlCashierMain;
+        private System.Windows.Forms.Button btnCashierProfile;
     }
 }

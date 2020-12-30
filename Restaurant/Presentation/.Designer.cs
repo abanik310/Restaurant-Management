@@ -35,7 +35,7 @@
             this.btnAdminPurchases = new System.Windows.Forms.Button();
             this.btnAdminFood = new System.Windows.Forms.Button();
             this.btnAdminLogout = new System.Windows.Forms.Button();
-            this.btnAdminSettings = new System.Windows.Forms.Button();
+            this.btnAdminProfile = new System.Windows.Forms.Button();
             this.btnAdminDashBoard = new System.Windows.Forms.Button();
             this.pnlAdminUI = new System.Windows.Forms.Panel();
             this.pnlAdminMain = new System.Windows.Forms.Panel();
@@ -72,7 +72,7 @@
             this.AdminLeftPanel.Controls.Add(this.btnAdminPurchases);
             this.AdminLeftPanel.Controls.Add(this.btnAdminFood);
             this.AdminLeftPanel.Controls.Add(this.btnAdminLogout);
-            this.AdminLeftPanel.Controls.Add(this.btnAdminSettings);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminProfile);
             this.AdminLeftPanel.Controls.Add(this.btnAdminDashBoard);
             this.AdminLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AdminLeftPanel.Location = new System.Drawing.Point(3, 3);
@@ -138,16 +138,16 @@
             this.btnAdminLogout.UseVisualStyleBackColor = false;
             this.btnAdminLogout.Click += new System.EventHandler(this.btnAdminLogout_Click);
             // 
-            // btnAdminSettings
+            // btnAdminProfile
             // 
-            this.btnAdminSettings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminSettings.Location = new System.Drawing.Point(3, 270);
-            this.btnAdminSettings.Name = "btnAdminSettings";
-            this.btnAdminSettings.Size = new System.Drawing.Size(120, 36);
-            this.btnAdminSettings.TabIndex = 2;
-            this.btnAdminSettings.Text = "Settings";
-            this.btnAdminSettings.UseVisualStyleBackColor = true;
-            this.btnAdminSettings.Click += new System.EventHandler(this.btnAdminSettings_Click);
+            this.btnAdminProfile.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminProfile.Location = new System.Drawing.Point(3, 270);
+            this.btnAdminProfile.Name = "btnAdminProfile";
+            this.btnAdminProfile.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminProfile.TabIndex = 2;
+            this.btnAdminProfile.Text = "Profile";
+            this.btnAdminProfile.UseVisualStyleBackColor = true;
+            this.btnAdminProfile.Click += new System.EventHandler(this.btnAdminSettings_Click);
             // 
             // btnAdminDashBoard
             // 
@@ -194,7 +194,7 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(964, 17);
+            this.label1.Location = new System.Drawing.Point(861, 16);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(112, 28);
             this.label1.TabIndex = 4;
@@ -205,7 +205,7 @@
             this.lblAdminName.AutoSize = true;
             this.lblAdminName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAdminName.Location = new System.Drawing.Point(1082, 17);
+            this.lblAdminName.Location = new System.Drawing.Point(979, 16);
             this.lblAdminName.Name = "lblAdminName";
             this.lblAdminName.Size = new System.Drawing.Size(75, 28);
             this.lblAdminName.TabIndex = 5;
@@ -239,7 +239,7 @@
         private System.Windows.Forms.Label lblAdminName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdminLogout;
-        private System.Windows.Forms.Button btnAdminSettings;
+        private System.Windows.Forms.Button btnAdminProfile;
         private System.Windows.Forms.Button btnAdminDashBoard;
         private System.Windows.Forms.Panel pnlAdminUI;
         private System.Windows.Forms.Button btnAdminEmployees;

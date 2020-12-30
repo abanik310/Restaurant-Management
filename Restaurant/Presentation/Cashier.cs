@@ -25,8 +25,21 @@ namespace Restaurant
             this.Location = new Point(0, 0);
             this.Size = new Size(w, h);
 
-            AdminDashBoard adminDashBoard = new AdminDashBoard();
-            pnlAdminUI.Controls.Add(adminDashBoard);
+            //AdminDashBoard adminDashBoard = new AdminDashBoard();
+            //pnlAdminUI.Controls.Add(adminDashBoard);
+
+            pnlManagerMain.Controls.Clear();
+            //CashierDashBoard cashierDashBoard = new CashierDashBoard();
+            ////pnlManagerMain.Controls.Add(cashierDashBoard);
+
+            //pnlCashierMain.Controls.Add(cashierDashBoard);
+
+            pnlManagerMain.Controls.Clear();
+            CashierDashBoard cashierDashBoard = new CashierDashBoard();
+            pnlManagerMain.Controls.Add(cashierDashBoard);
+
+            
+
         }
 
         private void Form2_FormClosing(object sender, FormClosingEventArgs e)
@@ -86,6 +99,13 @@ namespace Restaurant
             Login login = new Login();
             login.Show();
             this.Hide();
+        }
+
+        private void btnManagerDashBoard_Click(object sender, EventArgs e)
+        {
+            pnlManagerMain.Controls.Clear();
+            CashierDashBoard cashierDashBoard = new CashierDashBoard();
+            pnlManagerMain.Controls.Add(cashierDashBoard);
         }
     }
 }

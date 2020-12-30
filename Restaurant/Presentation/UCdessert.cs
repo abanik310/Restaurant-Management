@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class DesertUscntrl : UserControl
+    public partial class UCDessert : UserControl
     {
-        public DesertUscntrl()
+        public UCDessert()
         {
             InitializeComponent();
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }
