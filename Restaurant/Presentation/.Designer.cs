@@ -30,18 +30,18 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.AdminLeftPanel = new System.Windows.Forms.Panel();
+            this.btnAdminEmployees = new System.Windows.Forms.Button();
+            this.btnAdminUsers = new System.Windows.Forms.Button();
+            this.btnAdminPurchases = new System.Windows.Forms.Button();
+            this.btnAdminFood = new System.Windows.Forms.Button();
             this.btnAdminLogout = new System.Windows.Forms.Button();
             this.btnAdminSettings = new System.Windows.Forms.Button();
-            this.btnDashBoard = new System.Windows.Forms.Button();
+            this.btnAdminDashBoard = new System.Windows.Forms.Button();
+            this.pnlAdminUI = new System.Windows.Forms.Panel();
+            this.pnlAdminMain = new System.Windows.Forms.Panel();
+            this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAdminName = new System.Windows.Forms.Label();
-            this.pnlAdminUI = new System.Windows.Forms.Panel();
-            this.btnPurchases = new System.Windows.Forms.Button();
-            this.btnFood = new System.Windows.Forms.Button();
-            this.btnEmployees = new System.Windows.Forms.Button();
-            this.btnUsers = new System.Windows.Forms.Button();
-            this.panel1 = new System.Windows.Forms.Panel();
-            this.pnlAdminMain = new System.Windows.Forms.Panel();
             this.tableLayoutPanel1.SuspendLayout();
             this.AdminLeftPanel.SuspendLayout();
             this.pnlAdminUI.SuspendLayout();
@@ -67,19 +67,63 @@
             // AdminLeftPanel
             // 
             this.AdminLeftPanel.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.AdminLeftPanel.Controls.Add(this.btnEmployees);
-            this.AdminLeftPanel.Controls.Add(this.btnUsers);
-            this.AdminLeftPanel.Controls.Add(this.btnPurchases);
-            this.AdminLeftPanel.Controls.Add(this.btnFood);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminEmployees);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminUsers);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminPurchases);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminFood);
             this.AdminLeftPanel.Controls.Add(this.btnAdminLogout);
             this.AdminLeftPanel.Controls.Add(this.btnAdminSettings);
-            this.AdminLeftPanel.Controls.Add(this.btnDashBoard);
+            this.AdminLeftPanel.Controls.Add(this.btnAdminDashBoard);
             this.AdminLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
             this.AdminLeftPanel.Location = new System.Drawing.Point(3, 3);
             this.AdminLeftPanel.Name = "AdminLeftPanel";
             this.AdminLeftPanel.Size = new System.Drawing.Size(126, 723);
             this.AdminLeftPanel.TabIndex = 2;
             this.AdminLeftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminLeftPanel_Paint);
+            // 
+            // btnAdminEmployees
+            // 
+            this.btnAdminEmployees.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminEmployees.Location = new System.Drawing.Point(3, 144);
+            this.btnAdminEmployees.Name = "btnAdminEmployees";
+            this.btnAdminEmployees.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminEmployees.TabIndex = 9;
+            this.btnAdminEmployees.Text = "Employees";
+            this.btnAdminEmployees.UseVisualStyleBackColor = true;
+            this.btnAdminEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
+            // 
+            // btnAdminUsers
+            // 
+            this.btnAdminUsers.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminUsers.Location = new System.Drawing.Point(3, 102);
+            this.btnAdminUsers.Name = "btnAdminUsers";
+            this.btnAdminUsers.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminUsers.TabIndex = 8;
+            this.btnAdminUsers.Text = "Users";
+            this.btnAdminUsers.UseVisualStyleBackColor = true;
+            this.btnAdminUsers.Click += new System.EventHandler(this.button4_Click);
+            // 
+            // btnAdminPurchases
+            // 
+            this.btnAdminPurchases.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminPurchases.Location = new System.Drawing.Point(3, 228);
+            this.btnAdminPurchases.Name = "btnAdminPurchases";
+            this.btnAdminPurchases.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminPurchases.TabIndex = 7;
+            this.btnAdminPurchases.Text = "Purchases";
+            this.btnAdminPurchases.UseVisualStyleBackColor = true;
+            this.btnAdminPurchases.Click += new System.EventHandler(this.btnPurchases_Click);
+            // 
+            // btnAdminFood
+            // 
+            this.btnAdminFood.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminFood.Location = new System.Drawing.Point(3, 186);
+            this.btnAdminFood.Name = "btnAdminFood";
+            this.btnAdminFood.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminFood.TabIndex = 6;
+            this.btnAdminFood.Text = "Food";
+            this.btnAdminFood.UseVisualStyleBackColor = true;
+            this.btnAdminFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
             // btnAdminLogout
             // 
@@ -105,15 +149,45 @@
             this.btnAdminSettings.UseVisualStyleBackColor = true;
             this.btnAdminSettings.Click += new System.EventHandler(this.btnAdminSettings_Click);
             // 
-            // btnDashBoard
+            // btnAdminDashBoard
             // 
-            this.btnDashBoard.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnDashBoard.Location = new System.Drawing.Point(3, 60);
-            this.btnDashBoard.Name = "btnDashBoard";
-            this.btnDashBoard.Size = new System.Drawing.Size(120, 36);
-            this.btnDashBoard.TabIndex = 0;
-            this.btnDashBoard.Text = "Dash Board";
-            this.btnDashBoard.UseVisualStyleBackColor = true;
+            this.btnAdminDashBoard.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminDashBoard.Location = new System.Drawing.Point(3, 60);
+            this.btnAdminDashBoard.Name = "btnAdminDashBoard";
+            this.btnAdminDashBoard.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminDashBoard.TabIndex = 0;
+            this.btnAdminDashBoard.Text = "Dash Board";
+            this.btnAdminDashBoard.UseVisualStyleBackColor = true;
+            // 
+            // pnlAdminUI
+            // 
+            this.pnlAdminUI.BackColor = System.Drawing.SystemColors.ControlLight;
+            this.pnlAdminUI.Controls.Add(this.pnlAdminMain);
+            this.pnlAdminUI.Controls.Add(this.panel1);
+            this.pnlAdminUI.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAdminUI.Location = new System.Drawing.Point(135, 3);
+            this.pnlAdminUI.Name = "pnlAdminUI";
+            this.pnlAdminUI.Size = new System.Drawing.Size(1212, 723);
+            this.pnlAdminUI.TabIndex = 3;
+            // 
+            // pnlAdminMain
+            // 
+            this.pnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.pnlAdminMain.Location = new System.Drawing.Point(0, 58);
+            this.pnlAdminMain.Name = "pnlAdminMain";
+            this.pnlAdminMain.Size = new System.Drawing.Size(1212, 665);
+            this.pnlAdminMain.TabIndex = 1;
+            // 
+            // panel1
+            // 
+            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.panel1.Controls.Add(this.label1);
+            this.panel1.Controls.Add(this.lblAdminName);
+            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
+            this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(1212, 58);
+            this.panel1.TabIndex = 0;
             // 
             // label1
             // 
@@ -136,80 +210,6 @@
             this.lblAdminName.Size = new System.Drawing.Size(75, 28);
             this.lblAdminName.TabIndex = 5;
             this.lblAdminName.Text = "Name";
-            // 
-            // pnlAdminUI
-            // 
-            this.pnlAdminUI.BackColor = System.Drawing.SystemColors.ControlLight;
-            this.pnlAdminUI.Controls.Add(this.pnlAdminMain);
-            this.pnlAdminUI.Controls.Add(this.panel1);
-            this.pnlAdminUI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdminUI.Location = new System.Drawing.Point(135, 3);
-            this.pnlAdminUI.Name = "pnlAdminUI";
-            this.pnlAdminUI.Size = new System.Drawing.Size(1212, 723);
-            this.pnlAdminUI.TabIndex = 3;
-            // 
-            // btnPurchases
-            // 
-            this.btnPurchases.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnPurchases.Location = new System.Drawing.Point(3, 228);
-            this.btnPurchases.Name = "btnPurchases";
-            this.btnPurchases.Size = new System.Drawing.Size(120, 36);
-            this.btnPurchases.TabIndex = 7;
-            this.btnPurchases.Text = "Purchases";
-            this.btnPurchases.UseVisualStyleBackColor = true;
-            this.btnPurchases.Click += new System.EventHandler(this.btnPurchases_Click);
-            // 
-            // btnFood
-            // 
-            this.btnFood.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnFood.Location = new System.Drawing.Point(3, 186);
-            this.btnFood.Name = "btnFood";
-            this.btnFood.Size = new System.Drawing.Size(120, 36);
-            this.btnFood.TabIndex = 6;
-            this.btnFood.Text = "Food";
-            this.btnFood.UseVisualStyleBackColor = true;
-            this.btnFood.Click += new System.EventHandler(this.btnFood_Click);
-            // 
-            // btnEmployees
-            // 
-            this.btnEmployees.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnEmployees.Location = new System.Drawing.Point(3, 144);
-            this.btnEmployees.Name = "btnEmployees";
-            this.btnEmployees.Size = new System.Drawing.Size(120, 36);
-            this.btnEmployees.TabIndex = 9;
-            this.btnEmployees.Text = "Employees";
-            this.btnEmployees.UseVisualStyleBackColor = true;
-            this.btnEmployees.Click += new System.EventHandler(this.btnEmployees_Click);
-            // 
-            // btnUsers
-            // 
-            this.btnUsers.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnUsers.Location = new System.Drawing.Point(3, 102);
-            this.btnUsers.Name = "btnUsers";
-            this.btnUsers.Size = new System.Drawing.Size(120, 36);
-            this.btnUsers.TabIndex = 8;
-            this.btnUsers.Text = "Users";
-            this.btnUsers.UseVisualStyleBackColor = true;
-            this.btnUsers.Click += new System.EventHandler(this.button4_Click);
-            // 
-            // panel1
-            // 
-            this.panel1.BackColor = System.Drawing.Color.DarkSlateGray;
-            this.panel1.Controls.Add(this.label1);
-            this.panel1.Controls.Add(this.lblAdminName);
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1212, 58);
-            this.panel1.TabIndex = 0;
-            // 
-            // pnlAdminMain
-            // 
-            this.pnlAdminMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdminMain.Location = new System.Drawing.Point(0, 58);
-            this.pnlAdminMain.Name = "pnlAdminMain";
-            this.pnlAdminMain.Size = new System.Drawing.Size(1212, 665);
-            this.pnlAdminMain.TabIndex = 1;
             // 
             // Admin
             // 
@@ -240,12 +240,12 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnAdminLogout;
         private System.Windows.Forms.Button btnAdminSettings;
-        private System.Windows.Forms.Button btnDashBoard;
+        private System.Windows.Forms.Button btnAdminDashBoard;
         private System.Windows.Forms.Panel pnlAdminUI;
-        private System.Windows.Forms.Button btnEmployees;
-        private System.Windows.Forms.Button btnUsers;
-        private System.Windows.Forms.Button btnPurchases;
-        private System.Windows.Forms.Button btnFood;
+        private System.Windows.Forms.Button btnAdminEmployees;
+        private System.Windows.Forms.Button btnAdminUsers;
+        private System.Windows.Forms.Button btnAdminPurchases;
+        private System.Windows.Forms.Button btnAdminFood;
         private System.Windows.Forms.Panel pnlAdminMain;
         private System.Windows.Forms.Panel panel1;
     }

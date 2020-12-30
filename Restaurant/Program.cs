@@ -18,7 +18,7 @@ namespace Restaurant
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Login());
             //Application.Run(new Menu());
-            Application.Run(new Admin());
+            Application.Run(new Manager());
         }
     }
 }
