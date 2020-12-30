@@ -43,7 +43,7 @@
             this.panel1.Location = new System.Drawing.Point(2, 2);
             this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(452, 401);
+            this.panel1.Size = new System.Drawing.Size(602, 494);
             this.panel1.TabIndex = 0;
             // 
             // button4
@@ -127,12 +127,8 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainDishUSCntrl";
-<<<<<<< HEAD
-            this.Size = new System.Drawing.Size(454, 403);
-            this.panel1.ResumeLayout(false);
-=======
             this.Size = new System.Drawing.Size(605, 496);
->>>>>>> af9c18ff71c6f58f87243296eeaa7592d3f4c151
+            this.panel1.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
