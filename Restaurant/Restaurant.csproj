@@ -66,6 +66,24 @@
     <Compile Include="Presentation\SettingControl.Designer.cs">
       <DependentUpon>SettingControl.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\UCAppetizers2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCAppetizers2.Designer.cs">
+      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCDessert2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCDessert2.Designer.cs">
+      <DependentUpon>UCDessert2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCMainCourse2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCMainCourse2.Designer.cs">
+      <DependentUpon>UCMainCourse2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Users.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -143,6 +161,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\SettingControl.resx">
       <DependentUpon>SettingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCAppetizers2.resx">
+      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCDessert2.resx">
+      <DependentUpon>UCDessert2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCMainCourse2.resx">
+      <DependentUpon>UCMainCourse2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
