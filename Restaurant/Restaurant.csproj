@@ -103,12 +103,6 @@
     <Compile Include="Presentation\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Register.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\Register.Designer.cs">
-      <DependentUpon>Register.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentation\Form5.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,9 +167,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UCmainDish.resx">
       <DependentUpon>UCmainDish.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Register.resx">
-      <DependentUpon>Register.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
