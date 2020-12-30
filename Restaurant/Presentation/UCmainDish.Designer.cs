@@ -28,19 +28,12 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainDishUSCntrl));
             this.panel1 = new System.Windows.Forms.Panel();
-            this.button4 = new System.Windows.Forms.Button();
-            this.button5 = new System.Windows.Forms.Button();
-            this.button6 = new System.Windows.Forms.Button();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
-            this.panel1.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel1
             // 
+<<<<<<< HEAD
             this.panel1.Controls.Add(this.button4);
             this.panel1.Controls.Add(this.button5);
             this.panel1.Controls.Add(this.button6);
@@ -119,6 +112,14 @@
             this.button1.TabIndex = 12;
             this.button1.UseVisualStyleBackColor = true;
             // 
+=======
+            this.panel1.Location = new System.Drawing.Point(3, 2);
+            this.panel1.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.panel1.Name = "panel1";
+            this.panel1.Size = new System.Drawing.Size(602, 501);
+            this.panel1.TabIndex = 0;
+            // 
+>>>>>>> af9c18ff71c6f58f87243296eeaa7592d3f4c151
             // MainDishUSCntrl
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -126,8 +127,12 @@
             this.Controls.Add(this.panel1);
             this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "MainDishUSCntrl";
+<<<<<<< HEAD
             this.Size = new System.Drawing.Size(454, 403);
             this.panel1.ResumeLayout(false);
+=======
+            this.Size = new System.Drawing.Size(605, 496);
+>>>>>>> af9c18ff71c6f58f87243296eeaa7592d3f4c151
             this.ResumeLayout(false);
 
         }
@@ -135,11 +140,5 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Button button4;
-        private System.Windows.Forms.Button button5;
-        private System.Windows.Forms.Button button6;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.Button button1;
     }
 }
