@@ -48,11 +48,24 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="Presentation\.Designer - Copy.cs">
+      <DependentUpon>Manager.cs</DependentUpon>
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Presentation\Manager.cs">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Presentation\Food.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentation\Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\ManagerDashBoard.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\ManagerDashBoard.Designer.cs">
+      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\PurchasesAll.cs">
       <SubType>UserControl</SubType>
@@ -65,6 +78,24 @@
     </Compile>
     <Compile Include="Presentation\SettingControl.Designer.cs">
       <DependentUpon>SettingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCAppetizers2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCAppetizers2.Designer.cs">
+      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCDessert2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCDessert2.Designer.cs">
+      <DependentUpon>UCDessert2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCMainCourse2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCMainCourse2.Designer.cs">
+      <DependentUpon>UCMainCourse2.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Users.cs">
       <SubType>UserControl</SubType>
@@ -129,6 +160,9 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Presentation\Manager.resx">
+      <DependentUpon>Manager.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
@@ -138,11 +172,23 @@
     <EmbeddedResource Include="Presentation\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\ManagerDashBoard.resx">
+      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PurchasesAll.resx">
       <DependentUpon>PurchasesAll.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\SettingControl.resx">
       <DependentUpon>SettingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCAppetizers2.resx">
+      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCDessert2.resx">
+      <DependentUpon>UCDessert2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCMainCourse2.resx">
+      <DependentUpon>UCMainCourse2.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>

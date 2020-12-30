@@ -34,24 +34,24 @@
             this.btnUpdateEmployee = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.tbxEmployeePassword = new System.Windows.Forms.TextBox();
+            this.tbxEmployeeUserName = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.comboBox2 = new System.Windows.Forms.ComboBox();
+            this.tbxEmployeeBloodGroup = new System.Windows.Forms.ComboBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.comboBox1 = new System.Windows.Forms.ComboBox();
+            this.tbxEmployeeDesignation = new System.Windows.Forms.ComboBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.dateTimePicker2 = new System.Windows.Forms.DateTimePicker();
+            this.tbxEmployeeJoinDate = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.tbxEmployeeEmail = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.tbxEmployeeParmanentAdd = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.tbxEmployeePresentAddress = new System.Windows.Forms.TextBox();
+            this.tbxEmployeeDOB = new System.Windows.Forms.DateTimePicker();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.tbxEmployeeName = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.tableLayoutPanel2 = new System.Windows.Forms.TableLayoutPanel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -89,30 +89,31 @@
             this.panel1.Controls.Add(this.btnUpdateEmployee);
             this.panel1.Controls.Add(this.btnAddEmployee);
             this.panel1.Controls.Add(this.label10);
-            this.panel1.Controls.Add(this.textBox6);
-            this.panel1.Controls.Add(this.textBox5);
+            this.panel1.Controls.Add(this.tbxEmployeePassword);
+            this.panel1.Controls.Add(this.tbxEmployeeUserName);
             this.panel1.Controls.Add(this.label9);
-            this.panel1.Controls.Add(this.comboBox2);
+            this.panel1.Controls.Add(this.tbxEmployeeBloodGroup);
             this.panel1.Controls.Add(this.label8);
-            this.panel1.Controls.Add(this.comboBox1);
+            this.panel1.Controls.Add(this.tbxEmployeeDesignation);
             this.panel1.Controls.Add(this.label7);
-            this.panel1.Controls.Add(this.dateTimePicker2);
+            this.panel1.Controls.Add(this.tbxEmployeeJoinDate);
             this.panel1.Controls.Add(this.label6);
-            this.panel1.Controls.Add(this.textBox4);
+            this.panel1.Controls.Add(this.tbxEmployeeEmail);
             this.panel1.Controls.Add(this.label5);
-            this.panel1.Controls.Add(this.textBox3);
+            this.panel1.Controls.Add(this.tbxEmployeeParmanentAdd);
             this.panel1.Controls.Add(this.label4);
-            this.panel1.Controls.Add(this.textBox2);
-            this.panel1.Controls.Add(this.dateTimePicker1);
+            this.panel1.Controls.Add(this.tbxEmployeePresentAddress);
+            this.panel1.Controls.Add(this.tbxEmployeeDOB);
             this.panel1.Controls.Add(this.label3);
             this.panel1.Controls.Add(this.label2);
-            this.panel1.Controls.Add(this.textBox1);
+            this.panel1.Controls.Add(this.tbxEmployeeName);
             this.panel1.Controls.Add(this.label1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel1.Location = new System.Drawing.Point(3, 3);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(279, 717);
             this.panel1.TabIndex = 0;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // label11
             // 
@@ -159,21 +160,21 @@
             this.label10.TabIndex = 40;
             this.label10.Text = "Password:";
             // 
-            // textBox6
+            // tbxEmployeePassword
             // 
-            this.textBox6.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox6.Location = new System.Drawing.Point(139, 198);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(112, 20);
-            this.textBox6.TabIndex = 39;
+            this.tbxEmployeePassword.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeePassword.Location = new System.Drawing.Point(139, 198);
+            this.tbxEmployeePassword.Name = "tbxEmployeePassword";
+            this.tbxEmployeePassword.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeePassword.TabIndex = 39;
             // 
-            // textBox5
+            // tbxEmployeeUserName
             // 
-            this.textBox5.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox5.Location = new System.Drawing.Point(139, 162);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(112, 20);
-            this.textBox5.TabIndex = 38;
+            this.tbxEmployeeUserName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeUserName.Location = new System.Drawing.Point(139, 162);
+            this.tbxEmployeeUserName.Name = "tbxEmployeeUserName";
+            this.tbxEmployeeUserName.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeUserName.TabIndex = 38;
             // 
             // label9
             // 
@@ -186,11 +187,11 @@
             this.label9.TabIndex = 37;
             this.label9.Text = "User Name:";
             // 
-            // comboBox2
+            // tbxEmployeeBloodGroup
             // 
-            this.comboBox2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox2.FormattingEnabled = true;
-            this.comboBox2.Items.AddRange(new object[] {
+            this.tbxEmployeeBloodGroup.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeBloodGroup.FormattingEnabled = true;
+            this.tbxEmployeeBloodGroup.Items.AddRange(new object[] {
             "A+",
             "A-",
             "B+",
@@ -199,10 +200,10 @@
             "O-",
             "AB+",
             "AB-"});
-            this.comboBox2.Location = new System.Drawing.Point(139, 311);
-            this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(112, 20);
-            this.comboBox2.TabIndex = 36;
+            this.tbxEmployeeBloodGroup.Location = new System.Drawing.Point(139, 311);
+            this.tbxEmployeeBloodGroup.Name = "tbxEmployeeBloodGroup";
+            this.tbxEmployeeBloodGroup.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeBloodGroup.TabIndex = 36;
             // 
             // label8
             // 
@@ -215,18 +216,18 @@
             this.label8.TabIndex = 35;
             this.label8.Text = "Blood Group:";
             // 
-            // comboBox1
+            // tbxEmployeeDesignation
             // 
-            this.comboBox1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.comboBox1.FormattingEnabled = true;
-            this.comboBox1.Items.AddRange(new object[] {
+            this.tbxEmployeeDesignation.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeDesignation.FormattingEnabled = true;
+            this.tbxEmployeeDesignation.Items.AddRange(new object[] {
             "Waiter",
             "Chef",
             "Manager"});
-            this.comboBox1.Location = new System.Drawing.Point(139, 421);
-            this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(112, 20);
-            this.comboBox1.TabIndex = 34;
+            this.tbxEmployeeDesignation.Location = new System.Drawing.Point(139, 421);
+            this.tbxEmployeeDesignation.Name = "tbxEmployeeDesignation";
+            this.tbxEmployeeDesignation.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeDesignation.TabIndex = 34;
             // 
             // label7
             // 
@@ -239,13 +240,13 @@
             this.label7.TabIndex = 33;
             this.label7.Text = "Designation:";
             // 
-            // dateTimePicker2
+            // tbxEmployeeJoinDate
             // 
-            this.dateTimePicker2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker2.Location = new System.Drawing.Point(139, 455);
-            this.dateTimePicker2.Name = "dateTimePicker2";
-            this.dateTimePicker2.Size = new System.Drawing.Size(112, 20);
-            this.dateTimePicker2.TabIndex = 32;
+            this.tbxEmployeeJoinDate.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeJoinDate.Location = new System.Drawing.Point(139, 455);
+            this.tbxEmployeeJoinDate.Name = "tbxEmployeeJoinDate";
+            this.tbxEmployeeJoinDate.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeJoinDate.TabIndex = 32;
             // 
             // label6
             // 
@@ -258,13 +259,13 @@
             this.label6.TabIndex = 31;
             this.label6.Text = "Joinning Date:";
             // 
-            // textBox4
+            // tbxEmployeeEmail
             // 
-            this.textBox4.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox4.Location = new System.Drawing.Point(139, 235);
-            this.textBox4.Name = "textBox4";
-            this.textBox4.Size = new System.Drawing.Size(112, 20);
-            this.textBox4.TabIndex = 30;
+            this.tbxEmployeeEmail.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeEmail.Location = new System.Drawing.Point(139, 235);
+            this.tbxEmployeeEmail.Name = "tbxEmployeeEmail";
+            this.tbxEmployeeEmail.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeEmail.TabIndex = 30;
             // 
             // label5
             // 
@@ -277,13 +278,13 @@
             this.label5.TabIndex = 29;
             this.label5.Text = "Email:";
             // 
-            // textBox3
+            // tbxEmployeeParmanentAdd
             // 
-            this.textBox3.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(139, 384);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(112, 20);
-            this.textBox3.TabIndex = 28;
+            this.tbxEmployeeParmanentAdd.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeParmanentAdd.Location = new System.Drawing.Point(139, 384);
+            this.tbxEmployeeParmanentAdd.Name = "tbxEmployeeParmanentAdd";
+            this.tbxEmployeeParmanentAdd.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeParmanentAdd.TabIndex = 28;
             // 
             // label4
             // 
@@ -297,21 +298,21 @@
             this.label4.Text = "Parmanent Address:";
             this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
-            // textBox2
+            // tbxEmployeePresentAddress
             // 
-            this.textBox2.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(139, 347);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(112, 20);
-            this.textBox2.TabIndex = 26;
+            this.tbxEmployeePresentAddress.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeePresentAddress.Location = new System.Drawing.Point(139, 347);
+            this.tbxEmployeePresentAddress.Name = "tbxEmployeePresentAddress";
+            this.tbxEmployeePresentAddress.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeePresentAddress.TabIndex = 26;
             // 
-            // dateTimePicker1
+            // tbxEmployeeDOB
             // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Location = new System.Drawing.Point(139, 275);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(112, 20);
-            this.dateTimePicker1.TabIndex = 25;
+            this.tbxEmployeeDOB.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeDOB.Location = new System.Drawing.Point(139, 275);
+            this.tbxEmployeeDOB.Name = "tbxEmployeeDOB";
+            this.tbxEmployeeDOB.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeDOB.TabIndex = 25;
             // 
             // label3
             // 
@@ -335,13 +336,13 @@
             this.label2.TabIndex = 23;
             this.label2.Text = "Date of birth:";
             // 
-            // textBox1
+            // tbxEmployeeName
             // 
-            this.textBox1.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(139, 124);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(112, 20);
-            this.textBox1.TabIndex = 22;
+            this.tbxEmployeeName.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeName.Location = new System.Drawing.Point(139, 124);
+            this.tbxEmployeeName.Name = "tbxEmployeeName";
+            this.tbxEmployeeName.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeName.TabIndex = 22;
             // 
             // label1
             // 
@@ -432,6 +433,7 @@
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.Size = new System.Drawing.Size(915, 644);
             this.dataGridView1.TabIndex = 1;
+            this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
             // 
             // Employee
             // 
@@ -456,24 +458,24 @@
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox6;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox tbxEmployeePassword;
+        private System.Windows.Forms.TextBox tbxEmployeeUserName;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.ComboBox comboBox2;
+        private System.Windows.Forms.ComboBox tbxEmployeeBloodGroup;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.ComboBox comboBox1;
+        private System.Windows.Forms.ComboBox tbxEmployeeDesignation;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.DateTimePicker dateTimePicker2;
+        private System.Windows.Forms.DateTimePicker tbxEmployeeJoinDate;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.TextBox tbxEmployeeEmail;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.TextBox tbxEmployeeParmanentAdd;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.TextBox tbxEmployeePresentAddress;
+        private System.Windows.Forms.DateTimePicker tbxEmployeeDOB;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox tbxEmployeeName;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Button btnUpdateEmployee;
         private System.Windows.Forms.Button btnAddEmployee;

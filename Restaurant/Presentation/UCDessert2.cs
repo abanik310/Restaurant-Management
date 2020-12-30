@@ -10,24 +10,14 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class Employee : UserControl
+    public partial class UCDessert2 : UserControl
     {
-        public Employee()
+        public UCDessert2()
         {
             InitializeComponent();
         }
 
-        private void label4_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
+        private void pnlucdessert2_Paint(object sender, PaintEventArgs e)
         {
 
         }
