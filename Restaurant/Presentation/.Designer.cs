@@ -121,7 +121,7 @@
             this.btnAdminFood.Name = "btnAdminFood";
             this.btnAdminFood.Size = new System.Drawing.Size(120, 36);
             this.btnAdminFood.TabIndex = 6;
-            this.btnAdminFood.Text = "Food";
+            this.btnAdminFood.Text = "Food Stock";
             this.btnAdminFood.UseVisualStyleBackColor = true;
             this.btnAdminFood.Click += new System.EventHandler(this.btnFood_Click);
             // 

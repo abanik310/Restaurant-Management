@@ -30,6 +30,7 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.AdminLeftPanel = new System.Windows.Forms.Panel();
+            this.btnCashierProfile = new System.Windows.Forms.Button();
             this.btnManagerPurchases = new System.Windows.Forms.Button();
             this.btnManFood = new System.Windows.Forms.Button();
             this.btnManagerLogout = new System.Windows.Forms.Button();
@@ -41,7 +42,6 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAdminName = new System.Windows.Forms.Label();
-            this.btnCashierProfile = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.AdminLeftPanel.SuspendLayout();
             this.pnlAdminUI.SuspendLayout();
@@ -81,6 +81,16 @@
             this.AdminLeftPanel.TabIndex = 2;
             this.AdminLeftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminLeftPanel_Paint);
             // 
+            // btnCashierProfile
+            // 
+            this.btnCashierProfile.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnCashierProfile.Location = new System.Drawing.Point(3, 186);
+            this.btnCashierProfile.Name = "btnCashierProfile";
+            this.btnCashierProfile.Size = new System.Drawing.Size(120, 36);
+            this.btnCashierProfile.TabIndex = 8;
+            this.btnCashierProfile.Text = "Profile";
+            this.btnCashierProfile.UseVisualStyleBackColor = true;
+            // 
             // btnManagerPurchases
             // 
             this.btnManagerPurchases.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -99,7 +109,7 @@
             this.btnManFood.Name = "btnManFood";
             this.btnManFood.Size = new System.Drawing.Size(120, 36);
             this.btnManFood.TabIndex = 6;
-            this.btnManFood.Text = "Food";
+            this.btnManFood.Text = "Food Stock";
             this.btnManFood.UseVisualStyleBackColor = true;
             this.btnManFood.Click += new System.EventHandler(this.btnFood_Click);
             // 
@@ -198,16 +208,6 @@
             this.lblAdminName.Size = new System.Drawing.Size(75, 28);
             this.lblAdminName.TabIndex = 5;
             this.lblAdminName.Text = "Name";
-            // 
-            // btnCashierProfile
-            // 
-            this.btnCashierProfile.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCashierProfile.Location = new System.Drawing.Point(3, 186);
-            this.btnCashierProfile.Name = "btnCashierProfile";
-            this.btnCashierProfile.Size = new System.Drawing.Size(120, 36);
-            this.btnCashierProfile.TabIndex = 8;
-            this.btnCashierProfile.Text = "Profile";
-            this.btnCashierProfile.UseVisualStyleBackColor = true;
             // 
             // Manager
             // 

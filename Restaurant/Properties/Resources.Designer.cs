@@ -113,6 +113,16 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _25232 {
+            get {
+                object obj = ResourceManager.GetObject("25232", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _575ff7fd547876bedeaf4e3d6cbfb342 {
             get {
                 object obj = ResourceManager.GetObject("575ff7fd547876bedeaf4e3d6cbfb342", resourceCulture);
@@ -176,6 +186,16 @@ namespace Restaurant.Properties {
         internal static System.Drawing.Bitmap img_316131 {
             get {
                 object obj = ResourceManager.GetObject("img_316131", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap istockphoto_688550958_612x612 {
+            get {
+                object obj = ResourceManager.GetObject("istockphoto-688550958-612x612", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
