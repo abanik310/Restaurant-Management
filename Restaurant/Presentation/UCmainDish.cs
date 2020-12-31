@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class MainDishUSCntrl : UserControl
+    public partial class UCMainDish : UserControl
     {
-        public MainDishUSCntrl()
+        public UCMainDish()
         {
             InitializeComponent();
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
         }
     }
 }

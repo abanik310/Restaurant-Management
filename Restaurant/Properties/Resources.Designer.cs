@@ -63,6 +63,26 @@ namespace Restaurant.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _070994b89c927891ab6dbd1635741e27 {
+            get {
+                object obj = ResourceManager.GetObject("070994b89c927891ab6dbd1635741e27", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _110_1105843_rice_transparent_plate_png_rice_in_a_plate {
+            get {
+                object obj = ResourceManager.GetObject("110-1105843_rice-transparent-plate-png-rice-in-a-plate", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap _1200px_User_font_awesome_svg {
             get {
                 object obj = ResourceManager.GetObject("1200px-User_font_awesome.svg", resourceCulture);
@@ -96,6 +116,26 @@ namespace Restaurant.Properties {
         internal static System.Drawing.Bitmap _575ff7fd547876bedeaf4e3d6cbfb342 {
             get {
                 object obj = ResourceManager.GetObject("575ff7fd547876bedeaf4e3d6cbfb342", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _71ecqKUnieL__SL1500_ {
+            get {
+                object obj = ResourceManager.GetObject("71ecqKUnieL._SL1500_", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap download {
+            get {
+                object obj = ResourceManager.GetObject("download", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
@@ -147,6 +187,16 @@ namespace Restaurant.Properties {
             get {
                 object obj = ResourceManager.GetObject("kisspng-fast-food-junk-food-signage-symbol-food-5ace3b15818db5.193791081523464981" +
                         "5307", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap noodle_clipart_chowmein_3 {
+            get {
+                object obj = ResourceManager.GetObject("noodle-clipart-chowmein-3", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

@@ -49,10 +49,10 @@
   <ItemGroup>
     <Compile Include="DataAccess\DataAccess.cs" />
     <Compile Include="Presentation\.Designer - Copy.cs">
-      <DependentUpon>Manager.cs</DependentUpon>
+      <DependentUpon>Cashier.cs</DependentUpon>
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Presentation\Manager.cs">
+    <Compile Include="Presentation\Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\Food.cs">
@@ -61,11 +61,11 @@
     <Compile Include="Presentation\Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\ManagerDashBoard.cs">
+    <Compile Include="Presentation\CashierDashBoard.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\ManagerDashBoard.Designer.cs">
-      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
+    <Compile Include="Presentation\CashierDashBoard.Designer.cs">
+      <DependentUpon>CashierDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\PurchasesAll.cs">
       <SubType>UserControl</SubType>
@@ -79,23 +79,29 @@
     <Compile Include="Presentation\SettingControl.Designer.cs">
       <DependentUpon>SettingControl.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\UCAppetizers2.cs">
+    <Compile Include="Presentation\UCAppetizer.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\UCAppetizers2.Designer.cs">
-      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    <Compile Include="Presentation\UCAppetizer.Designer.cs">
+      <DependentUpon>UCAppetizer.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\UCDessert2.cs">
+    <Compile Include="Presentation\UCCashierProfile.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\UCDessert2.Designer.cs">
-      <DependentUpon>UCDessert2.cs</DependentUpon>
+    <Compile Include="Presentation\UCCashierProfile.Designer.cs">
+      <DependentUpon>UCCashierProfile.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\UCMainCourse2.cs">
+    <Compile Include="Presentation\UCDessert.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="Presentation\UCMainCourse2.Designer.cs">
-      <DependentUpon>UCMainCourse2.cs</DependentUpon>
+    <Compile Include="Presentation\UCDessert.Designer.cs">
+      <DependentUpon>UCDessert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCMainDish.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCMainDish.Designer.cs">
+      <DependentUpon>UCMainDish.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Users.cs">
       <SubType>UserControl</SubType>
@@ -128,40 +134,16 @@
     <Compile Include="Presentation\AdminDashBoard.Designer.cs">
       <DependentUpon>AdminDashBoard.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\Menu.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Presentation\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </Compile>
     <Compile Include="Presentation\Form5.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Presentation\Form5.Designer.cs">
       <DependentUpon>Form5.cs</DependentUpon>
     </Compile>
-    <Compile Include="Presentation\UCappetizer.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\UCappetizer.Designer.cs">
-      <DependentUpon>UCappetizer.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\UCdessert.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\UCdessert.Designer.cs">
-      <DependentUpon>UCdessert.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\UCmainDish.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\UCmainDish.Designer.cs">
-      <DependentUpon>UCmainDish.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Presentation\Manager.resx">
-      <DependentUpon>Manager.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\Cashier.resx">
+      <DependentUpon>Cashier.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
@@ -172,8 +154,8 @@
     <EmbeddedResource Include="Presentation\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\ManagerDashBoard.resx">
-      <DependentUpon>ManagerDashBoard.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\CashierDashBoard.resx">
+      <DependentUpon>CashierDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PurchasesAll.resx">
       <DependentUpon>PurchasesAll.cs</DependentUpon>
@@ -181,14 +163,17 @@
     <EmbeddedResource Include="Presentation\SettingControl.resx">
       <DependentUpon>SettingControl.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCAppetizers2.resx">
-      <DependentUpon>UCAppetizers2.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\UCAppetizer.resx">
+      <DependentUpon>UCAppetizer.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCDessert2.resx">
-      <DependentUpon>UCDessert2.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\UCCashierProfile.resx">
+      <DependentUpon>UCCashierProfile.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCMainCourse2.resx">
-      <DependentUpon>UCMainCourse2.cs</DependentUpon>
+    <EmbeddedResource Include="Presentation\UCDessert.resx">
+      <DependentUpon>UCDessert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCMainDish.resx">
+      <DependentUpon>UCMainDish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
@@ -201,18 +186,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\AdminDashBoard.resx">
       <DependentUpon>AdminDashBoard.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCappetizer.resx">
-      <DependentUpon>UCappetizer.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCdessert.resx">
-      <DependentUpon>UCdessert.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\UCmainDish.resx">
-      <DependentUpon>UCmainDish.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -275,6 +248,21 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\21-216187_clip-art-restaurant-free-elements-objects-restaurant-logo.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\download.jpg" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\110-1105843_rice-transparent-plate-png-rice-in-a-plate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\noodle-clipart-chowmein-3.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\070994b89c927891ab6dbd1635741e27.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\71ecqKUnieL._SL1500_.jpg" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

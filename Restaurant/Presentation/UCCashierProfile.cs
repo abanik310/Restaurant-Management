@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class UCAppetizers2 : UserControl
+    public partial class UCCashierProfile : UserControl
     {
-        public UCAppetizers2()
+        public UCCashierProfile()
         {
             InitializeComponent();
         }
