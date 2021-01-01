@@ -29,7 +29,7 @@
         private void InitializeComponent()
         {
             this.tbxUserName = new System.Windows.Forms.TextBox();
-            this.tbxPassword = new System.Windows.Forms.TextBox();
+            this.tbxUserPassword = new System.Windows.Forms.TextBox();
             this.btnLogin = new System.Windows.Forms.Button();
             this.panel3 = new System.Windows.Forms.Panel();
             this.panel2 = new System.Windows.Forms.Panel();
@@ -45,15 +45,15 @@
             this.tbxUserName.Size = new System.Drawing.Size(339, 44);
             this.tbxUserName.TabIndex = 0;
             // 
-            // tbxPassword
+            // tbxUserPassword
             // 
-            this.tbxPassword.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxPassword.Location = new System.Drawing.Point(73, 310);
-            this.tbxPassword.Multiline = true;
-            this.tbxPassword.Name = "tbxPassword";
-            this.tbxPassword.PasswordChar = '*';
-            this.tbxPassword.Size = new System.Drawing.Size(339, 44);
-            this.tbxPassword.TabIndex = 1;
+            this.tbxUserPassword.Font = new System.Drawing.Font("Cambria", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxUserPassword.Location = new System.Drawing.Point(73, 310);
+            this.tbxUserPassword.Multiline = true;
+            this.tbxUserPassword.Name = "tbxUserPassword";
+            this.tbxUserPassword.PasswordChar = '*';
+            this.tbxUserPassword.Size = new System.Drawing.Size(339, 44);
+            this.tbxUserPassword.TabIndex = 1;
             // 
             // btnLogin
             // 
@@ -64,7 +64,6 @@
             this.btnLogin.Name = "btnLogin";
             this.btnLogin.Size = new System.Drawing.Size(212, 44);
             this.btnLogin.TabIndex = 2;
-            this.btnLogin.Text = "Login";
             this.btnLogin.UseVisualStyleBackColor = false;
             // 
             // panel3
@@ -106,7 +105,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.btnLogin);
-            this.Controls.Add(this.tbxPassword);
+            this.Controls.Add(this.tbxUserPassword);
             this.Controls.Add(this.tbxUserName);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
@@ -123,7 +122,7 @@
         #endregion
 
         private System.Windows.Forms.TextBox tbxUserName;
-        private System.Windows.Forms.TextBox tbxPassword;
+        private System.Windows.Forms.TextBox tbxUserPassword;
         private System.Windows.Forms.Button btnLogin;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Panel panel2;
