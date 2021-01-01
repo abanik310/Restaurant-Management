@@ -45,7 +45,7 @@ namespace Restaurant
             SqlCommand command = new SqlCommand(query, connection);
             int result = command.ExecuteNonQuery();
 
-            if  (tbxUserName.lengthTostring)
+            if (tbxUserName.lengthTostring)
         }
     }
 }
