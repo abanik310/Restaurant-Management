@@ -35,8 +35,8 @@ namespace Restaurant
             //pnlCashierMain.Controls.Add(cashierDashBoard);
 
             pnlManagerMain.Controls.Clear();
-            CashierDashBoard cashierDashBoard = new CashierDashBoard();
-            pnlManagerMain.Controls.Add(cashierDashBoard);
+            CashierDashBoard2 cashierDashBoard2 = new CashierDashBoard2();
+            pnlManagerMain.Controls.Add(cashierDashBoard2);
 
             
 
@@ -104,7 +104,7 @@ namespace Restaurant
         private void btnManagerDashBoard_Click(object sender, EventArgs e)
         {
             pnlManagerMain.Controls.Clear();
-            CashierDashBoard cashierDashBoard = new CashierDashBoard();
+            CashierDashBoard2 cashierDashBoard = new CashierDashBoard2();
             pnlManagerMain.Controls.Add(cashierDashBoard);
         }
     }

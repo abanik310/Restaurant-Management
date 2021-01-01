@@ -48,6 +48,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="DataAccess\DataAccess.cs" />
+    <Compile Include="DGVPrinter.cs" />
     <Compile Include="Presentation\.Designer - Copy.cs">
       <DependentUpon>Cashier.cs</DependentUpon>
       <SubType>Form</SubType>
@@ -55,17 +56,17 @@
     <Compile Include="Presentation\Cashier.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Include="Presentation\CashierDashBoard2.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\CashierDashBoard2.Designer.cs">
+      <DependentUpon>CashierDashBoard2.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Food.cs">
       <SubType>UserControl</SubType>
     </Compile>
     <Compile Include="Presentation\Food.Designer.cs">
       <DependentUpon>Food.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\CashierDashBoard.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\CashierDashBoard.Designer.cs">
-      <DependentUpon>CashierDashBoard.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\PurchasesAll.cs">
       <SubType>UserControl</SubType>
@@ -148,14 +149,14 @@
     <EmbeddedResource Include="Presentation\Admin.resx">
       <DependentUpon>Admin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\CashierDashBoard2.resx">
+      <DependentUpon>CashierDashBoard2.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Form5.resx">
       <DependentUpon>Form5.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\CashierDashBoard.resx">
-      <DependentUpon>CashierDashBoard.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\PurchasesAll.resx">
       <DependentUpon>PurchasesAll.cs</DependentUpon>
