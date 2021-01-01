@@ -30,6 +30,8 @@
         {
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.tbxEmployeeContactNmbr = new System.Windows.Forms.TextBox();
+            this.label12 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.btnUpdateEmployee = new System.Windows.Forms.Button();
             this.btnAddEmployee = new System.Windows.Forms.Button();
@@ -60,8 +62,6 @@
             this.btnDeleteEmployee = new System.Windows.Forms.Button();
             this.btnFrshEmployee = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.tbxEmployeeContactNmbr = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
             this.tableLayoutPanel1.SuspendLayout();
             this.panel1.SuspendLayout();
             this.tableLayoutPanel2.SuspendLayout();
@@ -119,6 +119,25 @@
             this.panel1.TabIndex = 0;
             this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
+            // tbxEmployeeContactNmbr
+            // 
+            this.tbxEmployeeContactNmbr.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeContactNmbr.Location = new System.Drawing.Point(138, 270);
+            this.tbxEmployeeContactNmbr.Name = "tbxEmployeeContactNmbr";
+            this.tbxEmployeeContactNmbr.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeContactNmbr.TabIndex = 46;
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.label12.Location = new System.Drawing.Point(24, 275);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(109, 15);
+            this.label12.TabIndex = 45;
+            this.label12.Text = "Contact Number:";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -152,6 +171,7 @@
             this.btnAddEmployee.TabIndex = 41;
             this.btnAddEmployee.Text = "Add";
             this.btnAddEmployee.UseVisualStyleBackColor = false;
+            this.btnAddEmployee.Click += new System.EventHandler(this.btnAddEmployee_Click);
             // 
             // label10
             // 
@@ -428,6 +448,7 @@
             this.btnFrshEmployee.TabIndex = 43;
             this.btnFrshEmployee.Text = "Refresh";
             this.btnFrshEmployee.UseVisualStyleBackColor = false;
+            this.btnFrshEmployee.Click += new System.EventHandler(this.btnFrshEmployee_Click);
             // 
             // dataGridView1
             // 
@@ -438,25 +459,6 @@
             this.dataGridView1.Size = new System.Drawing.Size(915, 644);
             this.dataGridView1.TabIndex = 1;
             this.dataGridView1.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dataGridView1_CellContentClick);
-            // 
-            // tbxEmployeeContactNmbr
-            // 
-            this.tbxEmployeeContactNmbr.Font = new System.Drawing.Font("Cambria", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxEmployeeContactNmbr.Location = new System.Drawing.Point(138, 270);
-            this.tbxEmployeeContactNmbr.Name = "tbxEmployeeContactNmbr";
-            this.tbxEmployeeContactNmbr.Size = new System.Drawing.Size(112, 20);
-            this.tbxEmployeeContactNmbr.TabIndex = 46;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.label12.Location = new System.Drawing.Point(24, 275);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(109, 15);
-            this.label12.TabIndex = 45;
-            this.label12.Text = "Contact Number:";
             // 
             // Employee
             // 

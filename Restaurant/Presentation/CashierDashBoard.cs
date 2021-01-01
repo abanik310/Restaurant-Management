@@ -60,5 +60,10 @@ namespace Restaurant.Presentation
         {
 
         }
+
+        private void btnchickenwings_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
