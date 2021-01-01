@@ -84,8 +84,9 @@ namespace Restaurant
         private void btnAdminLogout_Click(object sender, EventArgs e)
         {
             Login login = new Login();
-            login.Show();
+            
             this.Hide();
+            login.Show();
         }
     }
 }

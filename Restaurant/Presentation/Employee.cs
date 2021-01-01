@@ -31,5 +31,10 @@ namespace Restaurant.Presentation
         {
 
         }
+
+        private void btnAddEmployee_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
