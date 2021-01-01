@@ -47,5 +47,16 @@ namespace Restaurant
 
             if (tbxUserName.lengthTostring)
         }
+
+        private void btnLogin_Click(object sender, EventArgs e)
+        {
+            SqlConnection connection = new SqlConnection(ConfigurationManager.ConnectionStrings["RestaurantDB"].ConnectionString);
+            connection.Open();
+            string query = "Select * from Users where ID='" + tbxUserName.Text + "'and Password='" + tbxUserPassword.Text + "'";
+            SqlCommand command = new SqlCommand(query, connection);
+            int result = command.ExecuteNonQuery();
+
+            if (tbxUserName.lengthTostring)
+        }
     }
 }

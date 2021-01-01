@@ -60,10 +60,5 @@ namespace Restaurant.Presentation
         {
 
         }
-
-        private void btnPrintBill_Click(object sender, EventArgs e)
-        {
-
-        }
     }
 }
