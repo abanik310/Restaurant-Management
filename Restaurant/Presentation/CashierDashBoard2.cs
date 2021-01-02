@@ -18,6 +18,11 @@ namespace Restaurant.Presentation
         double SubTotal;
         int FriedChicken, FrenchFry, Wedges, Soup, Dumpllings, Biriyani, SetMenu, Burger, Pizza, Noodles, Sandwich, Faluda, Custurd, Donut;
 
+        private void DGVCashier_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
         private void btnCashierPlaceOrder_Click(object sender, EventArgs e)
         {
             DGVPrinter dGVPrinter = new DGVPrinter();

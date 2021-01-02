@@ -62,7 +62,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="DataAccess\DataAccess.cs" />
     <Compile Include="Presentation\.Designer - Copy.cs">
       <DependentUpon>Cashier.cs</DependentUpon>
       <SubType>Form</SubType>
@@ -75,6 +74,13 @@
     </Compile>
     <Compile Include="Presentation\CashierDashBoard2.Designer.cs">
       <DependentUpon>CashierDashBoard2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\DGVPrinter.cs" />
+    <Compile Include="Presentation\CashierFood.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\CashierFood.Designer.cs">
+      <DependentUpon>CashierFood.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Food.cs">
       <SubType>UserControl</SubType>
@@ -93,6 +99,12 @@
     </Compile>
     <Compile Include="Presentation\SettingControl.Designer.cs">
       <DependentUpon>SettingControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Presentation\UCAdminProfile.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\UCAdminProfile.Designer.cs">
+      <DependentUpon>UCAdminProfile.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\UCAppetizer.cs">
       <SubType>UserControl</SubType>
@@ -123,12 +135,6 @@
     </Compile>
     <Compile Include="Presentation\Users.Designer.cs">
       <DependentUpon>Users.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Presentation\Employee.cs">
-      <SubType>UserControl</SubType>
-    </Compile>
-    <Compile Include="Presentation\Employee.Designer.cs">
-      <DependentUpon>Employee.cs</DependentUpon>
     </Compile>
     <Compile Include="Presentation\Login.cs">
       <SubType>Form</SubType>
@@ -166,6 +172,9 @@
     <EmbeddedResource Include="Presentation\CashierDashBoard2.resx">
       <DependentUpon>CashierDashBoard2.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\CashierFood.resx">
+      <DependentUpon>CashierFood.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
     </EmbeddedResource>
@@ -177,6 +186,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\SettingControl.resx">
       <DependentUpon>SettingControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\UCAdminProfile.resx">
+      <DependentUpon>UCAdminProfile.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\UCAppetizer.resx">
       <DependentUpon>UCAppetizer.cs</DependentUpon>
@@ -192,9 +204,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Users.resx">
       <DependentUpon>Users.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Presentation\Employee.resx">
-      <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Login.resx">
       <DependentUpon>Login.cs</DependentUpon>
@@ -247,6 +256,7 @@
     <None Include="Resources\Team-Cuisine-Logo.png" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="DataAccess\" />
     <Folder Include="Entity\" />
   </ItemGroup>
   <ItemGroup>

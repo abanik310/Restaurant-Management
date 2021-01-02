@@ -42,6 +42,7 @@
             this.panel1 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.lblAdminName = new System.Windows.Forms.Label();
+            this.btnAdminSetting = new System.Windows.Forms.Button();
             this.tableLayoutPanel1.SuspendLayout();
             this.AdminLeftPanel.SuspendLayout();
             this.pnlAdminUI.SuspendLayout();
@@ -67,6 +68,7 @@
             // AdminLeftPanel
             // 
             this.AdminLeftPanel.BackColor = System.Drawing.Color.DarkSlateGray;
+            this.AdminLeftPanel.Controls.Add(this.btnAdminSetting);
             this.AdminLeftPanel.Controls.Add(this.btnAdminEmployees);
             this.AdminLeftPanel.Controls.Add(this.btnAdminUsers);
             this.AdminLeftPanel.Controls.Add(this.btnAdminPurchases);
@@ -130,7 +132,7 @@
             this.btnAdminLogout.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnAdminLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnAdminLogout.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnAdminLogout.Location = new System.Drawing.Point(3, 312);
+            this.btnAdminLogout.Location = new System.Drawing.Point(3, 354);
             this.btnAdminLogout.Name = "btnAdminLogout";
             this.btnAdminLogout.Size = new System.Drawing.Size(120, 36);
             this.btnAdminLogout.TabIndex = 3;
@@ -211,6 +213,16 @@
             this.lblAdminName.TabIndex = 5;
             this.lblAdminName.Text = "Name";
             // 
+            // btnAdminSetting
+            // 
+            this.btnAdminSetting.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAdminSetting.Location = new System.Drawing.Point(3, 312);
+            this.btnAdminSetting.Name = "btnAdminSetting";
+            this.btnAdminSetting.Size = new System.Drawing.Size(120, 36);
+            this.btnAdminSetting.TabIndex = 10;
+            this.btnAdminSetting.Text = "Settings";
+            this.btnAdminSetting.UseVisualStyleBackColor = true;
+            // 
             // Admin
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -248,5 +260,6 @@
         private System.Windows.Forms.Button btnAdminFood;
         private System.Windows.Forms.Panel pnlAdminMain;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Button btnAdminSetting;
     }
 }

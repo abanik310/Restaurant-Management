@@ -46,9 +46,9 @@ namespace Restaurant
 
         private void btnEmployees_Click(object sender, EventArgs e)
         {
-            pnlAdminMain.Controls.Clear();
-            Employee employee = new Employee();
-            pnlAdminMain.Controls.Add(employee);
+            //pnlAdminMain.Controls.Clear();
+            //Employee employee = new Employee();
+            //pnlAdminMain.Controls.Add(employee);
 
         }
 
@@ -62,8 +62,8 @@ namespace Restaurant
         private void btnAdminSettings_Click(object sender, EventArgs e)
         {
             pnlAdminMain.Controls.Clear();
-            SettingControl settingControl = new SettingControl();
-            pnlAdminMain.Controls.Add(settingControl);
+            UCAdminProfile uCAdminProfile = new UCAdminProfile();
+            pnlAdminMain.Controls.Add(uCAdminProfile);
         }
 
         private void btnFood_Click(object sender, EventArgs e)
@@ -87,6 +87,13 @@ namespace Restaurant
             
             this.Hide();
             login.Show();
+        }
+
+        private void btnAdminSetting_Click(object sender, EventArgs e)
+        {
+            pnlAdminMain.Controls.Clear();
+            SettingControl settingControl = new SettingControl();
+            pnlAdminMain.Controls.Add(settingControl);
         }
     }
 }
