@@ -62,11 +62,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-<<<<<<< HEAD
     <Compile Include="DataAccess\DataAccess.cs" />
-    <Compile Include="DGVPrinter.cs" />
-=======
->>>>>>> 98fc19e63151b478c8a274c5610e4cb8e154a18f
     <Compile Include="Presentation\.Designer - Copy.cs">
       <DependentUpon>Cashier.cs</DependentUpon>
       <SubType>Form</SubType>
