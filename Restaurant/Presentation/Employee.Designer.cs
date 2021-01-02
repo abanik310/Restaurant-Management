@@ -36,9 +36,6 @@ namespace Restaurant.Presentation
             this.btnDeleteEmployee = new System.Windows.Forms.Button();
             this.btnFrshEmployee = new System.Windows.Forms.Button();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.radioButton4 = new System.Windows.Forms.RadioButton();
-            this.radioButton3 = new System.Windows.Forms.RadioButton();
-            this.tbxEmployeeGender = new System.Windows.Forms.Label();
             this.tbxEmployeeContactNmbr = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
@@ -66,6 +63,11 @@ namespace Restaurant.Presentation
             this.panel1 = new System.Windows.Forms.Panel();
             this.tbxEmployeeParmanentAdd = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
+            this.tbxEmployeeGender = new System.Windows.Forms.Label();
+            this.radioButton3 = new System.Windows.Forms.RadioButton();
+            this.radioButton4 = new System.Windows.Forms.RadioButton();
+            this.EmployeeSalary = new System.Windows.Forms.Label();
+            this.tbxEmployeeSalary = new System.Windows.Forms.TextBox();
             this.tableLayoutPanel2.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
@@ -151,42 +153,6 @@ namespace Restaurant.Presentation
             this.dataGridView1.RowHeadersWidth = 51;
             this.dataGridView1.Size = new System.Drawing.Size(921, 566);
             this.dataGridView1.TabIndex = 1;
-            // 
-            // radioButton4
-            // 
-            this.radioButton4.AutoSize = true;
-            this.radioButton4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton4.Location = new System.Drawing.Point(137, 482);
-            this.radioButton4.Name = "radioButton4";
-            this.radioButton4.Size = new System.Drawing.Size(64, 19);
-            this.radioButton4.TabIndex = 68;
-            this.radioButton4.TabStop = true;
-            this.radioButton4.Text = "Female";
-            this.radioButton4.UseVisualStyleBackColor = true;
-            // 
-            // radioButton3
-            // 
-            this.radioButton3.AutoSize = true;
-            this.radioButton3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.radioButton3.Location = new System.Drawing.Point(137, 457);
-            this.radioButton3.Name = "radioButton3";
-            this.radioButton3.Size = new System.Drawing.Size(52, 19);
-            this.radioButton3.TabIndex = 67;
-            this.radioButton3.TabStop = true;
-            this.radioButton3.Text = "Male";
-            this.radioButton3.UseVisualStyleBackColor = true;
-            // 
-            // tbxEmployeeGender
-            // 
-            this.tbxEmployeeGender.AutoSize = true;
-            this.tbxEmployeeGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.tbxEmployeeGender.ForeColor = System.Drawing.SystemColors.ControlText;
-            this.tbxEmployeeGender.Location = new System.Drawing.Point(76, 457);
-            this.tbxEmployeeGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.tbxEmployeeGender.Name = "tbxEmployeeGender";
-            this.tbxEmployeeGender.Size = new System.Drawing.Size(55, 15);
-            this.tbxEmployeeGender.TabIndex = 66;
-            this.tbxEmployeeGender.Text = "Gender:";
             // 
             // tbxEmployeeContactNmbr
             // 
@@ -451,6 +417,8 @@ namespace Restaurant.Presentation
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.tbxEmployeeSalary);
+            this.panel1.Controls.Add(this.EmployeeSalary);
             this.panel1.Controls.Add(this.radioButton4);
             this.panel1.Controls.Add(this.radioButton3);
             this.panel1.Controls.Add(this.tbxEmployeeGender);
@@ -509,6 +477,62 @@ namespace Restaurant.Presentation
             this.tableLayoutPanel1.Size = new System.Drawing.Size(1221, 636);
             this.tableLayoutPanel1.TabIndex = 1;
             // 
+            // tbxEmployeeGender
+            // 
+            this.tbxEmployeeGender.AutoSize = true;
+            this.tbxEmployeeGender.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.tbxEmployeeGender.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.tbxEmployeeGender.Location = new System.Drawing.Point(83, 476);
+            this.tbxEmployeeGender.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.tbxEmployeeGender.Name = "tbxEmployeeGender";
+            this.tbxEmployeeGender.Size = new System.Drawing.Size(55, 15);
+            this.tbxEmployeeGender.TabIndex = 66;
+            this.tbxEmployeeGender.Text = "Gender:";
+            // 
+            // radioButton3
+            // 
+            this.radioButton3.AutoSize = true;
+            this.radioButton3.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton3.Location = new System.Drawing.Point(144, 476);
+            this.radioButton3.Name = "radioButton3";
+            this.radioButton3.Size = new System.Drawing.Size(52, 19);
+            this.radioButton3.TabIndex = 67;
+            this.radioButton3.TabStop = true;
+            this.radioButton3.Text = "Male";
+            this.radioButton3.UseVisualStyleBackColor = true;
+            // 
+            // radioButton4
+            // 
+            this.radioButton4.AutoSize = true;
+            this.radioButton4.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.radioButton4.Location = new System.Drawing.Point(144, 501);
+            this.radioButton4.Name = "radioButton4";
+            this.radioButton4.Size = new System.Drawing.Size(64, 19);
+            this.radioButton4.TabIndex = 68;
+            this.radioButton4.TabStop = true;
+            this.radioButton4.Text = "Female";
+            this.radioButton4.UseVisualStyleBackColor = true;
+            // 
+            // EmployeeSalary
+            // 
+            this.EmployeeSalary.AutoSize = true;
+            this.EmployeeSalary.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.EmployeeSalary.ForeColor = System.Drawing.SystemColors.ControlText;
+            this.EmployeeSalary.Location = new System.Drawing.Point(86, 452);
+            this.EmployeeSalary.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.EmployeeSalary.Name = "EmployeeSalary";
+            this.EmployeeSalary.Size = new System.Drawing.Size(49, 15);
+            this.EmployeeSalary.TabIndex = 70;
+            this.EmployeeSalary.Text = "Salary:";
+            // 
+            // tbxEmployeeSalary
+            // 
+            this.tbxEmployeeSalary.Location = new System.Drawing.Point(144, 452);
+            this.tbxEmployeeSalary.Margin = new System.Windows.Forms.Padding(2);
+            this.tbxEmployeeSalary.Name = "tbxEmployeeSalary";
+            this.tbxEmployeeSalary.Size = new System.Drawing.Size(112, 20);
+            this.tbxEmployeeSalary.TabIndex = 71;
+            // 
             // Employee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -536,9 +560,6 @@ namespace Restaurant.Presentation
         private System.Windows.Forms.Button btnDeleteEmployee;
         private System.Windows.Forms.Button btnFrshEmployee;
         private System.Windows.Forms.DataGridView dataGridView1;
-        private System.Windows.Forms.RadioButton radioButton4;
-        private System.Windows.Forms.RadioButton radioButton3;
-        private System.Windows.Forms.Label tbxEmployeeGender;
         private System.Windows.Forms.TextBox tbxEmployeeContactNmbr;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label10;
@@ -566,5 +587,10 @@ namespace Restaurant.Presentation
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.TextBox tbxEmployeeParmanentAdd;
         private System.Windows.Forms.TableLayoutPanel tableLayoutPanel1;
+        private System.Windows.Forms.RadioButton radioButton4;
+        private System.Windows.Forms.RadioButton radioButton3;
+        private System.Windows.Forms.Label tbxEmployeeGender;
+        private System.Windows.Forms.Label EmployeeSalary;
+        private System.Windows.Forms.TextBox tbxEmployeeSalary;
     }
 }
