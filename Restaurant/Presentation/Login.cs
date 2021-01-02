@@ -58,5 +58,10 @@ namespace Restaurant
 
             if (tbxUserName.lengthTostring)
         }
+
+        private void btnLogin_Click_1(object sender, EventArgs e)
+        {
+
+        }
     }
 }
