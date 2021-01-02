@@ -19,8 +19,13 @@ namespace Restaurant.Presentation
 
         private void btnEmployee_Click(object sender, EventArgs e)
         {
-            Employee employee = new Employee();
+            //Employee employee = new Employee();
             
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

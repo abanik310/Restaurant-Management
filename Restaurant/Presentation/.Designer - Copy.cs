@@ -175,6 +175,7 @@
             this.pnlCashierMain.Name = "pnlCashierMain";
             this.pnlCashierMain.Size = new System.Drawing.Size(1212, 665);
             this.pnlCashierMain.TabIndex = 2;
+            this.pnlCashierMain.Paint += new System.Windows.Forms.PaintEventHandler(this.pnlCashierMain_Paint);
             // 
             // panel1
             // 
