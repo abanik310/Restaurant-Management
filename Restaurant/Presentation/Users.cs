@@ -201,5 +201,10 @@ namespace Restaurant.Presentation
         {
 
         }
+
+        private void UserID_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
