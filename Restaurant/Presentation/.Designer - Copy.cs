@@ -52,17 +52,18 @@
             // tableLayoutPanel1
             // 
             this.tableLayoutPanel1.ColumnCount = 2;
-            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 132F));
+            this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Absolute, 176F));
             this.tableLayoutPanel1.ColumnStyles.Add(new System.Windows.Forms.ColumnStyle(System.Windows.Forms.SizeType.Percent, 100F));
             this.tableLayoutPanel1.Controls.Add(this.AdminLeftPanel, 0, 0);
             this.tableLayoutPanel1.Controls.Add(this.pnlAdminUI, 1, 0);
             this.tableLayoutPanel1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.tableLayoutPanel1.Location = new System.Drawing.Point(0, 0);
+            this.tableLayoutPanel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.tableLayoutPanel1.Name = "tableLayoutPanel1";
             this.tableLayoutPanel1.RowCount = 1;
             this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Percent, 100F));
-            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 20F));
-            this.tableLayoutPanel1.Size = new System.Drawing.Size(1350, 729);
+            this.tableLayoutPanel1.RowStyles.Add(new System.Windows.Forms.RowStyle(System.Windows.Forms.SizeType.Absolute, 25F));
+            this.tableLayoutPanel1.Size = new System.Drawing.Size(1800, 897);
             this.tableLayoutPanel1.TabIndex = 0;
             // 
             // AdminLeftPanel
@@ -75,18 +76,20 @@
             this.AdminLeftPanel.Controls.Add(this.btnManagerSettings);
             this.AdminLeftPanel.Controls.Add(this.btnManagerDashBoard);
             this.AdminLeftPanel.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.AdminLeftPanel.Location = new System.Drawing.Point(3, 3);
+            this.AdminLeftPanel.Location = new System.Drawing.Point(4, 4);
+            this.AdminLeftPanel.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.AdminLeftPanel.Name = "AdminLeftPanel";
-            this.AdminLeftPanel.Size = new System.Drawing.Size(126, 723);
+            this.AdminLeftPanel.Size = new System.Drawing.Size(168, 889);
             this.AdminLeftPanel.TabIndex = 2;
             this.AdminLeftPanel.Paint += new System.Windows.Forms.PaintEventHandler(this.AdminLeftPanel_Paint);
             // 
             // btnCashierProfile
             // 
             this.btnCashierProfile.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnCashierProfile.Location = new System.Drawing.Point(3, 186);
+            this.btnCashierProfile.Location = new System.Drawing.Point(4, 229);
+            this.btnCashierProfile.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnCashierProfile.Name = "btnCashierProfile";
-            this.btnCashierProfile.Size = new System.Drawing.Size(120, 36);
+            this.btnCashierProfile.Size = new System.Drawing.Size(160, 44);
             this.btnCashierProfile.TabIndex = 8;
             this.btnCashierProfile.Text = "Profile";
             this.btnCashierProfile.UseVisualStyleBackColor = true;
@@ -94,9 +97,10 @@
             // btnManagerPurchases
             // 
             this.btnManagerPurchases.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerPurchases.Location = new System.Drawing.Point(3, 144);
+            this.btnManagerPurchases.Location = new System.Drawing.Point(4, 177);
+            this.btnManagerPurchases.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManagerPurchases.Name = "btnManagerPurchases";
-            this.btnManagerPurchases.Size = new System.Drawing.Size(120, 36);
+            this.btnManagerPurchases.Size = new System.Drawing.Size(160, 44);
             this.btnManagerPurchases.TabIndex = 7;
             this.btnManagerPurchases.Text = "Purchases";
             this.btnManagerPurchases.UseVisualStyleBackColor = true;
@@ -105,9 +109,10 @@
             // btnManFood
             // 
             this.btnManFood.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManFood.Location = new System.Drawing.Point(3, 102);
+            this.btnManFood.Location = new System.Drawing.Point(4, 125);
+            this.btnManFood.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManFood.Name = "btnManFood";
-            this.btnManFood.Size = new System.Drawing.Size(120, 36);
+            this.btnManFood.Size = new System.Drawing.Size(160, 44);
             this.btnManFood.TabIndex = 6;
             this.btnManFood.Text = "Food Stock";
             this.btnManFood.UseVisualStyleBackColor = true;
@@ -118,9 +123,10 @@
             this.btnManagerLogout.BackColor = System.Drawing.SystemColors.ControlLight;
             this.btnManagerLogout.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.btnManagerLogout.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerLogout.Location = new System.Drawing.Point(3, 270);
+            this.btnManagerLogout.Location = new System.Drawing.Point(4, 332);
+            this.btnManagerLogout.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManagerLogout.Name = "btnManagerLogout";
-            this.btnManagerLogout.Size = new System.Drawing.Size(120, 36);
+            this.btnManagerLogout.Size = new System.Drawing.Size(160, 44);
             this.btnManagerLogout.TabIndex = 3;
             this.btnManagerLogout.Text = "Log Out";
             this.btnManagerLogout.UseVisualStyleBackColor = false;
@@ -129,9 +135,10 @@
             // btnManagerSettings
             // 
             this.btnManagerSettings.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerSettings.Location = new System.Drawing.Point(3, 228);
+            this.btnManagerSettings.Location = new System.Drawing.Point(4, 281);
+            this.btnManagerSettings.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManagerSettings.Name = "btnManagerSettings";
-            this.btnManagerSettings.Size = new System.Drawing.Size(120, 36);
+            this.btnManagerSettings.Size = new System.Drawing.Size(160, 44);
             this.btnManagerSettings.TabIndex = 2;
             this.btnManagerSettings.Text = "Settings";
             this.btnManagerSettings.UseVisualStyleBackColor = true;
@@ -140,9 +147,10 @@
             // btnManagerDashBoard
             // 
             this.btnManagerDashBoard.Font = new System.Drawing.Font("Cambria", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.btnManagerDashBoard.Location = new System.Drawing.Point(3, 60);
+            this.btnManagerDashBoard.Location = new System.Drawing.Point(4, 74);
+            this.btnManagerDashBoard.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.btnManagerDashBoard.Name = "btnManagerDashBoard";
-            this.btnManagerDashBoard.Size = new System.Drawing.Size(120, 36);
+            this.btnManagerDashBoard.Size = new System.Drawing.Size(160, 44);
             this.btnManagerDashBoard.TabIndex = 0;
             this.btnManagerDashBoard.Text = "Dash Board";
             this.btnManagerDashBoard.UseVisualStyleBackColor = true;
@@ -154,26 +162,29 @@
             this.pnlAdminUI.Controls.Add(this.pnlManagerMain);
             this.pnlAdminUI.Controls.Add(this.panel1);
             this.pnlAdminUI.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlAdminUI.Location = new System.Drawing.Point(135, 3);
+            this.pnlAdminUI.Location = new System.Drawing.Point(180, 4);
+            this.pnlAdminUI.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlAdminUI.Name = "pnlAdminUI";
-            this.pnlAdminUI.Size = new System.Drawing.Size(1212, 723);
+            this.pnlAdminUI.Size = new System.Drawing.Size(1616, 889);
             this.pnlAdminUI.TabIndex = 3;
             // 
             // pnlManagerMain
             // 
             this.pnlManagerMain.Controls.Add(this.pnlCashierMain);
             this.pnlManagerMain.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.pnlManagerMain.Location = new System.Drawing.Point(0, 58);
+            this.pnlManagerMain.Location = new System.Drawing.Point(0, 71);
+            this.pnlManagerMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlManagerMain.Name = "pnlManagerMain";
-            this.pnlManagerMain.Size = new System.Drawing.Size(1212, 665);
+            this.pnlManagerMain.Size = new System.Drawing.Size(1616, 818);
             this.pnlManagerMain.TabIndex = 1;
             // 
             // pnlCashierMain
             // 
             this.pnlCashierMain.Dock = System.Windows.Forms.DockStyle.Fill;
             this.pnlCashierMain.Location = new System.Drawing.Point(0, 0);
+            this.pnlCashierMain.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.pnlCashierMain.Name = "pnlCashierMain";
-            this.pnlCashierMain.Size = new System.Drawing.Size(1212, 665);
+            this.pnlCashierMain.Size = new System.Drawing.Size(1616, 818);
             this.pnlCashierMain.TabIndex = 2;
             // 
             // panel1
@@ -183,8 +194,9 @@
             this.panel1.Controls.Add(this.lblAdminName);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
+            this.panel1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(1212, 58);
+            this.panel1.Size = new System.Drawing.Size(1616, 71);
             this.panel1.TabIndex = 0;
             // 
             // label1
@@ -192,9 +204,10 @@
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.label1.Location = new System.Drawing.Point(870, 16);
+            this.label1.Location = new System.Drawing.Point(1160, 20);
+            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(112, 28);
+            this.label1.Size = new System.Drawing.Size(141, 36);
             this.label1.TabIndex = 4;
             this.label1.Text = "Welcome";
             // 
@@ -203,18 +216,20 @@
             this.lblAdminName.AutoSize = true;
             this.lblAdminName.Font = new System.Drawing.Font("Cambria", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblAdminName.ForeColor = System.Drawing.SystemColors.ControlLightLight;
-            this.lblAdminName.Location = new System.Drawing.Point(988, 16);
+            this.lblAdminName.Location = new System.Drawing.Point(1317, 20);
+            this.lblAdminName.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.lblAdminName.Name = "lblAdminName";
-            this.lblAdminName.Size = new System.Drawing.Size(75, 28);
+            this.lblAdminName.Size = new System.Drawing.Size(94, 36);
             this.lblAdminName.TabIndex = 5;
             this.lblAdminName.Text = "Name";
             // 
             // Manager
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1350, 729);
+            this.ClientSize = new System.Drawing.Size(1800, 897);
             this.Controls.Add(this.tableLayoutPanel1);
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Manager";
