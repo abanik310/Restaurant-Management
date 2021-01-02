@@ -10,16 +10,11 @@ using System.Windows.Forms;
 
 namespace Restaurant.Presentation
 {
-    public partial class PurchasesAll : UserControl
+    public partial class CashierFood : UserControl
     {
-        public PurchasesAll()
+        public CashierFood()
         {
             InitializeComponent();
-        }
-
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
         }
     }
 }
