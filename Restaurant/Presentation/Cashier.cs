@@ -60,8 +60,8 @@ namespace Restaurant
         private void btnEmployees_Click(object sender, EventArgs e)
         {
             pnlManagerMain.Controls.Clear();
-            Employee employee = new Employee();
-            pnlManagerMain.Controls.Add(employee);
+            //Employee employee = new Employee();
+            //pnlManagerMain.Controls.Add(employee);
 
         }
 
@@ -106,6 +106,11 @@ namespace Restaurant
             pnlManagerMain.Controls.Clear();
             CashierDashBoard2 cashierDashBoard = new CashierDashBoard2();
             pnlManagerMain.Controls.Add(cashierDashBoard);
+        }
+
+        private void pnlCashierMain_Paint(object sender, PaintEventArgs e)
+        {
+
         }
     }
 }

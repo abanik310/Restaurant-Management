@@ -82,6 +82,12 @@
     <Compile Include="Presentation\CashierFood.Designer.cs">
       <DependentUpon>CashierFood.cs</DependentUpon>
     </Compile>
+    <Compile Include="Presentation\Employee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="Presentation\Employee.Designer.cs">
+      <DependentUpon>Employee.cs</DependentUpon>
+    </Compile>
     <Compile Include="Presentation\Food.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -174,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\CashierFood.resx">
       <DependentUpon>CashierFood.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Presentation\Employee.resx">
+      <DependentUpon>Employee.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Presentation\Food.resx">
       <DependentUpon>Food.cs</DependentUpon>
