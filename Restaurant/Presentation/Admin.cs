@@ -88,5 +88,10 @@ namespace Restaurant
             this.Hide();
             login.Show();
         }
+
+        private void btnAdminDashBoard_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
